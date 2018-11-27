@@ -1,17 +1,11 @@
 module.exports = function(app) {
 
     app.get('/', (req, res) => {
-        console.log(req.session.email);
-        if (req.session.email !== undefined) {
-            console.log('ca passe if');
-            res.render('home.twig', { email: req.session.email });
-        } else {
-            res.render('home.twig', { email: 'undefined' });
-        }
+        res.render('home.twig', { email: req.session.email });
     });
 
     app.get('/login', (req, res) => {
-        res.render('login.twig');
+        res.render('login.twig', { email: req.session.email });
     });
 
     app.post('/login_attempt', (req, res) => {
@@ -21,7 +15,9 @@ module.exports = function(app) {
     });
 
     app.get('/logout', (req, res) => {
-        req.session.destroy();
+        if (req.session.email !== undefined) {
+            req.session.destroy();
+        }
         res.redirect('/');
     });
 }

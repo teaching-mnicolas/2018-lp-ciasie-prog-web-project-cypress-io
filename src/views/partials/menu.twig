@@ -1,8 +1,5 @@
 <nav>
     <a href="/">Home</a>
-    {% if {{email}} not 'undefined' %}
-    <a href="/logout">Logout {{email}}</a>
-    {% else %}
-    <a href="/login">Login</a>
-    {% endif %}
+    <a id="login" href="/login">Login</a>
+    <a id="logout" href="/logout">Logout</a>
 </nav>

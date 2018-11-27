@@ -9,6 +9,10 @@ nav a {
   font-size: 40px;
   margin: 10px;
 }
+nav p {
+  font-size: 40px;
+  margin: 10px;
+}
 
 .container {
   padding: 0 30px;
