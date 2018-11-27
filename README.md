@@ -13,6 +13,9 @@ npm install
 ./node_modules/.bin/cypress open
 ```
 
+## Ressources
+- [Vidéo explicative](https://www.youtube.com/watch?v=5XQOK0v_YRE)
+
 ## Auteurs
 **CORDIER Florian** et
 **ROHRBACHER Léon**
