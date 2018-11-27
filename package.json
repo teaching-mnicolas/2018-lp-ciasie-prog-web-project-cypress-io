@@ -1,0 +1,28 @@
+{
+  "name": "cypress_introduction",
+  "version": "1.0.0",
+  "description": "Cypress.io presentation by Florian CORDIER and Léon ROHRBACHER",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohrbacherLeon/cypress_introduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohrbacherLeon/cypress_introduction/issues"
+  },
+  "homepage": "https://github.com/RohrbacherLeon/cypress_introduction#readme",
+  "devDependencies": {
+    "cypress": "^3.1.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "twig": "^1.12.0"
+  }
+}
